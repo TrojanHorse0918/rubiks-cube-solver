@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+}
+
+h2{
+    color:#fff;
+}
+
+
+/* Navigation Bar Styles */
+.navbar{
+    display: flex;
+    background-color: #252526;
+    padding: 1vh;
+    flex-direction: row;
+    height: 7.5vh;
+    max-height: 75px;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 1.5px 5px #fff;
+}
+
+.item{
+    background-color: #252526;
+    color: #fff;
+    font-size: 1.65vw;
+    padding-top: 0.25vw;
+    padding-bottom: 0.25vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin: 1vw;
+    transition: 0.5s;
+}
+
+.item a{
+    color: #fff;
+    background-color: #252526;
+}
+
+.item:hover{
+    text-decoration: underline;
+    translate: 0 -0.35vh;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 7.5vh);
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+body,
+html{
+    height: 100%;
+}
+/*Cube Face Styles*/
+
+.cubex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 50vh;
+    max-height: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.cubex .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vh;
+    max-width: 300px;
+}
+
+.cubies{
+    background-color: aqua;
+    width: 16.5vh;
+    max-width: 100px;
+    height: 16.5vh;
+    max-height: 100px;
+    margin: 0.25vh;
+}
+
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: #fff;
+}
+
+.inputbox img{
+    height: 30vh;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button{
+    width: 5vw;
+    height: 5vh;
+}
+
+.top3{
+    margin-top: 1.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.bottom3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.redbutton{
+    background-color: red;
+    color: #000;
+    border-color: #000;
+    border-radius: 0.5vw;
+}
+
+.yellowbutton{
+    background-color: yellow;
+    color: #000;
+    border-color: #000;
+    border-radius: 0.5vw;
+}
+
+.greenbutton{
+    background-color: green;
+    color: #000;
+    border-color: #000;
+    border-radius: 0.5vw;
+}
+
+.bluebutton{
+    background-color: blue;
+    color: #000;
+    border-color: #000;
+    border-radius: 0.5vw;
+}
+
+.orangebutton{
+    background-color: orange;
+    color: #000;
+    border-color: #000;
+    border-radius: 0.5vw;
+}
+
+.whitebutton{
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+    border-radius: 0.5vw;
+}

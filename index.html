@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubik's Cube Solver</title>
+  <link rel="stylesheet" href="Styles/stylemain.css">
+  <script src="Scripts/script_index.js"></script>
+  <div class="navbar">
+    <div class="options-1 item"><a href = "home.html">Home</a></div>
+    <div class="options-2 item"><a href = "intermediate.html">Solve</a></div>
+    <div class="options-3 item"><a href = "input.html">Learn</a></div>
+    <div class="options-4 item"><a href = "input.html">About</a></div>
+  </div>
+</head>
+
+<body>
+  <div class="container">
+    <div class="rotate-img">
+      <img src="Rotations/B.png" alt=" " id="rotate">
+      <h2 id="instruction">B - Perform a CW rotation of the back face</h2><br>
+      <div class="buttons">
+        <button class="prev-button" id="prev-button">Previous</button>
+        <button class="next-button" id="next-button">Next</button>
+      </div>
+    </div>
+
+    <div class="cube-faces">
+      <div class="layer1">
+        <div class="cubex" id="face-top">
+          <div class="face">
+            <div class="row-1 row">
+              <div class="cubies-1 cubies" id="topr1c1">1</div>
+              <div class="cubies-2 cubies" id="topr1c2">2</div>
+              <div class="cubies-3 cubies" id="topr1c3">3</div>
+            </div>
+            <div class="row-2 row">
+              <div class="cubies-4 cubies" id="topr2c1">4</div>
+              <div class="cubies-5 cubies" id="topr2c2">U</div>
+              <div class="cubies-6 cubies" id="topr2c3">6</div>
+            </div>
+            <div class="row-3 row">
+              <div class="cubies-7 cubies" id="topr3c1">7</div>
+              <div class="cubies-8 cubies" id="topr3c2">8</div>
+              <div class="cubies-9 cubies" id="topr3c3">9</div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      
+
+      <div class="layer2">
+        <div class="cubex" id="face-left">
+          <div class="face">
+            <div class="row-1 row">
+              <div class="cubies-1 cubies" id="leftr1c1">1</div>
+              <div class="cubies-2 cubies" id="leftr1c2">2</div>
+              <div class="cubies-3 cubies" id="leftr1c3">3</div>
+            </div>
+            <div class="row-2 row">
+              <div class="cubies-4 cubies" id="leftr2c1">4</div>
+              <div class="cubies-5 cubies" id="leftr2c2">L</div>
+              <div class="cubies-6 cubies" id="leftr2c3">6</div>
+            </div>
+            <div class="row-3 row">
+              <div class="cubies-7 cubies" id="leftr3c1">7</div>
+              <div class="cubies-8 cubies" id="leftr3c2">8</div>
+              <div class="cubies-9 cubies" id="leftr3c3">9</div>
+            </div>
+          </div>
+        </div>      
+
+        <div class="cubex" id="face-front">
+          <div class="face">
+            <div class="row-1 row">
+              <div class="cubies-1 cubies" id="frontr1c1">1</div>
+              <div class="cubies-2 cubies" id="frontr1c2">2</div>
+              <div class="cubies-3 cubies" id="frontr1c3">3</div>
+            </div>
+            <div class="row-2 row">
+              <div class="cubies-4 cubies" id="frontr2c1">4</div>
+              <div class="cubies-5 cubies" id="frontr2c2">F</div>
+              <div class="cubies-6 cubies" id="frontr2c3">6</div>
+            </div>
+            <div class="row-3 row">
+              <div class="cubies-7 cubies" id="frontr3c1">7</div>
+              <div class="cubies-8 cubies" id="frontr3c2">8</div>
+              <div class="cubies-9 cubies" id="frontr3c3">9</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cubex" id="face-right">
+          <div class="face">
+            <div class="row-1 row">
+              <div class="cubies-1 cubies" id="rightr1c1">1</div>
+              <div class="cubies-2 cubies" id="rightr1c2">2</div>
+              <div class="cubies-3 cubies" id="rightr1c3">3</div>
+            </div>
+            <div class="row-2 row">
+              <div class="cubies-4 cubies" id="rightr2c1">4</div>
+              <div class="cubies-5 cubies" id="rightr2c2">R</div>
+              <div class="cubies-6 cubies" id="rightr2c3">6</div>
+            </div>
+            <div class="row-3 row">
+              <div class="cubies-7 cubies" id="rightr3c1">7</div>
+              <div class="cubies-8 cubies" id="rightr3c2">8</div>
+              <div class="cubies-9 cubies" id="rightr3c3">9</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cubex" id="face-back">
+          <div class="face">
+            <div class="row-1 row">
+              <div class="cubies-1 cubies" id="backr1c1">1</div>
+              <div class="cubies-2 cubies" id="backr1c2">2</div>
+              <div class="cubies-3 cubies" id="backr1c3">3</div>
+            </div>
+            <div class="row-2 row">
+              <div class="cubies-4 cubies" id="backr2c1">4</div>
+              <div class="cubies-5 cubies" id="backr2c2">B</div>
+              <div class="cubies-6 cubies" id="backr2c3">6</div>
+            </div>
+            <div class="row-3 row">
+              <div class="cubies-7 cubies" id="backr3c1">7</div>
+              <div class="cubies-8 cubies" id="backr3c2">8</div>
+              <div class="cubies-9 cubies" id="backr3c3">9</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="layer3">
+        <div class="cubex" id="face-down">
+          <div class="face">
+            <div class="row-1 row">
+              <div class="cubies-1 cubies" id="downr1c1">1</div>
+              <div class="cubies-2 cubies" id="downr1c2">2</div>
+              <div class="cubies-3 cubies" id="downr1c3">3</div>
+            </div>
+            <div class="row-2 row">
+              <div class="cubies-4 cubies" id="downr2c1">4</div>
+              <div class="cubies-5 cubies" id="downr2c2">D</div>
+              <div class="cubies-6 cubies" id="downr2c3">6</div>
+            </div>
+            <div class="row-3 row">
+              <div class="cubies-7 cubies" id="downr3c1">7</div>
+              <div class="cubies-8 cubies" id="downr3c2">8</div>
+              <div class="cubies-9 cubies" id="downr3c3">9</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+}
+
+
+
+/* Navigation Bar Styles */
+.navbar{
+    display: flex;
+    background-color: #252526;
+    padding: 1vh;
+    flex-direction: row;
+    height: 7.5vh;
+    max-height: 75px;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 1.5px 5px #fff;
+}
+
+.item{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.65vw;
+    padding-top: 0.25vw;
+    padding-bottom: 0.25vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin: 1vw;
+    transition: 0.5s;
+}
+
+.item a{
+    color: #fff;
+    background-color: #252526;
+}
+
+.item:hover{
+    text-decoration: underline;
+    translate: 0 -0.35vh;
+    color: #fff;
+    cursor: pointer;
+}   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+  }
+  
+  body {
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #e4e4e4;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 164px;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow:hidden;
+  }
+  
+  h1 {
+    font-size: 4vh;
+    font-weight: 600;
+    margin-bottom: 20px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #9c2b2e;
+    border-radius: 5px;
+  }
+  
+  p {
+    font-size: 2.5vh;
+    margin-bottom: 20px;
+    height: 7.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 2.5vh;
+    font-weight: 500;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+  
+  .btn a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  .btn.report {
+    background-color: #dc3545;
+    text-decoration: none;
+  }
+  
+  .btn.report:hover {
+    background-color: #c82333;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
